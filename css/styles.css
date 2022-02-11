@@ -6,3 +6,21 @@
     background-size: cover;
     color: white;
 }
+
+.img-contact{
+    height: 20em;
+    width: 20em;
+    /* display: block;
+    margin: auto; */
+}
+
+.big-size{
+    min-height: 25rem;
+}
+
+.div-absolute{
+    position: absolute;
+    
+    left: 25%;
+    bottom: 10%;
+}
