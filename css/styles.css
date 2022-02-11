@@ -1,0 +1,8 @@
+.first-section{
+    height: 35em;
+    background-image: url("../images/car\ interior.jpg");
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
