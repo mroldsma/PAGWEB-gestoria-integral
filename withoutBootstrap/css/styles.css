@@ -1,23 +1,35 @@
+:root{
+    --bgNavBar: #7e6c6c;
+    --darkSiena: #280000;
+    --rosewood: #570000;
+    --white: #fdffff;
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+html{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    background-color: #5d4954;
-    font-family: 'Poppins', sans-serif;
+    min-height: 10vh;
+    background-color: var(--bgNavBar);
 }
 
 .logo{
     color: rgb(230, 228, 228);
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 1.1rem;
 }
 
 .nav-links{
@@ -35,7 +47,7 @@ nav{
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: .9rem;
 }
 
 .burger{
@@ -47,7 +59,142 @@ nav{
     height: 2px;
     background-color:rgb(230, 228, 228) ;
     margin: 5px;
+    transition: all 0.3s ease;
 }
+
+#hero{
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(rgba(126, 108, 108, .5), rgba(40, 0, 0, .5)), 
+        url('/withoutBootstrap/images/paperwork.jpg') 
+        no-repeat center / cover;
+    color: white;
+}
+
+.hero-container{
+    height: 100%;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container .hero-info h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-container .hero-info h2{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.hero-container .hero-info p{
+    font-size: .9rem;
+    max-width: 60%;
+}
+
+.hero-container .hero-info a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #570000;
+    font-size: 1.6rem;
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    border: 2px solid #3d0101;
+    color: white;
+    box-shadow: 1px 1px 5px rgb(70, 69, 69);
+
+}
+
+
+#services{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.services-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-column{
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+    flex: 0 50%;
+}
+
+.services-card{
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, var(--rosewood) 50%);
+    background-size: 100% 200%;
+    background-position: 0 4%;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.services-card h3{
+    font-size: 1rem;
+    color: var(--rosewood);
+    margin: 1em 0;
+}
+
+.services-card p{
+    color: var(--rosewood);
+    font-size: .8rem;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+.services-img-wrapper{
+    background: var(--rosewood) url('/withoutBootstrap/images/car.jpg') center / 100% no-repeat;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7em;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+/* card hover animations */
+
+.services-card:hover{
+    background-position: 0 100%;
+}
+
+.services-card:hover p{
+    color: white;
+}
+
+.services-card:hover h3{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media query tablet */
 
@@ -59,6 +206,8 @@ nav{
     }
 }
 
+
+
 /* media query cell phone */
 
 @media screen and (max-width:768px){
@@ -66,16 +215,20 @@ nav{
         overflow-x: hidden;
     }
 
+    html{
+        font-size: 14px;
+    }
+
     .nav-links{
         position: absolute;
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #5d4954;
+        background-color: var(--bgNavBar);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 40%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
@@ -92,4 +245,26 @@ nav{
     .nav-active{
         transform: translateX(0%);
     }
+}
+
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-4px, -6px);
 }
