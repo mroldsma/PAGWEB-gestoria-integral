@@ -4,6 +4,13 @@
   --primaryHalfOpacity:rgba(69, 46, 38, 0.9);
 }
 
+/* ///////////////////////// */
+/* ////// navbar */
+/* ///////////////////////// */
+
+nav{
+  z-index: 10;
+}
 
 /* ///////////////////////// */
 /* ////// hero */
@@ -13,6 +20,7 @@
   background-image:linear-gradient(var(--primaryHalfOpacity), var(--primaryHalfOpacity)), url('/images/hero1.jpg');
   background-size: cover;
   height: 100vh;
+  margin-top: -3.5em;
 }
 
 /* ///////////////////////// */
