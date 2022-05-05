@@ -16,7 +16,7 @@ nav{
 /* ///////////////////////// */
 
 #hero{
-  background-image:linear-gradient(var(--primaryHalfOpacity), var(--primaryHalfOpacity)), url('/src/public/images/hero1.jpg');
+  background-image:linear-gradient(var(--primaryHalfOpacity), var(--primaryHalfOpacity)), url('/images/hero1.jpg');
   background-size: cover;
   height: 100vh;
   margin-top: -3.5em;
