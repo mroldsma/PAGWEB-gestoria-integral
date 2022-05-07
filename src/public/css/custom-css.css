@@ -50,17 +50,22 @@ nav{
 
 .img-servicios-automotor{
   position: relative;
-  width: 100%;
+  width: auto;
   height: 100%;
+  background-image: url("/images/negocio1.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
 }
 
-.img-servicios-automotor::after{
+.img-servicios-automotor:before{
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  color: red;
-  top: 10px;
-  z-index: 10;
+  width: 10em;
+  height: 10em;
+  top: -20px;
+  left: -20px;
+  z-index: 1;
+  border-top: 10px #8C3B1D solid;
+  border-left: 10px #8C3B1D solid;
 }
