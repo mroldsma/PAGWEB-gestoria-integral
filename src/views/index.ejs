@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="/css/style.css">
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="/css/custom-css.css">
+  <!-- BOXICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
   
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
@@ -25,45 +28,13 @@
 <body>
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container py-2">
-      <a class="navbar-brand" href="#">Sandra Traversa</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item mx-3">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Servicios</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-          </ul>
-        
-      </div>
-    </div>
-  </nav>
+  <%- include("templates/navbar") %>
   
 <!-- hero -->
+  <!-- TODO PONER FLECHA PARA ABAJO QUE TE LLEVE A LA PROXIMA SECCION -->
 <section id="hero">
   <div class="container-fluid h-100">
-    <div class="row h-100 d-flex">
+    <div class="row h-50 d-flex">
       <div
         class="col d-flex flex-column align-items-center justify-content-center"
       >
@@ -73,90 +44,17 @@
         <h2 class="display-4 text-white">Sandra Traversa</h2>
       </div>
     </div>
-  </div>
-</section>
-
-
-<!-- SOBRE MI  -->
-<section id="sobre-mi">
-  <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6 my-3">
-        <img
-          src="/images/sobremi2.jpg"
-          alt="sobre mi"
-          class="img-sobre-mi img-fluid d-block mx-auto"
-        />
-      </div>
-      <div class="col-12 col-md-6 my-3">
-        <h3 class="display-5 font-weight-bold d-inline-block titulo-seccion px-5">Sobre Mi</h3>
-        <ul>
-          <li>mas de x años de experiencia en capital federal y gran buenos aires</li>
-          <li>atencion personalizada</li>
-          <li>integralmente online, no te muevas de tu casa</li>
-          <li>servicio de excelencia</li>
-          <li>asesoramiento profesional</li>
-          <li>confidencialidad</li>
-          <li>mandataria con matricula nacional</li>
-          <li></li>
-          <li></li>
-        </ul>
-        <a href="#" class="btn btn-primary">Contactame</a>
-
-
+      <div class="col">
+        <p class="text-white lead text-center">Mandataria con matricula nacional, con años de experiencia en Capital federal y Gran buenos aires. Brindo un servicio de excelencia, con confidencialidad e integralmente online, para que no tengas que moverte de tu casa.</p>
       </div>
     </div>
   </div>
 </section>
 
 
-<!-- SERVICIOS -->
-<section id="servicios">
-  <div class="container-fluid bg-secondary">
-    <div class="row">
-        <h2>Servicios</h2>
-      <div class="col">
+<%- include("templates/index_page/servicios") %>
 
-
-        <h2>Tramites de Automotor</h2>
-        <ul>
-          <li>infracciones de transito</li>
-          <li>cedula de posesion</li>
-          <li>titular fallecido</li>
-          <li>falta de 08</li>
-          <li>descuentos de multas y patentes</li>
-          <li>altas y bajas de patentes</li>
-          <li>transferencias</li>
-          <li>inscripciones</li>
-          <li>desvinculacion</li>
-        </ul>
-
-        
-
-      </div>
-
-      <div class="col">
-        <div class="img-servicios-automotor"></div>
-      </div>
-    </div>
-
-    <h2>inmobiliarios</h2>
-        <ul>
-          <li>informe de dominio</li>
-          <li>datos nominales</li>
-          <li>planes de pago</li>
-          <li>arba</li>
-          <li>orientacion y asesoramiento</li>
-          <li>cesion de derechos</li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-
-        <h2>jubilaciones y pensiones</h2>
-
-  </div>
-</section>
 
 
 
