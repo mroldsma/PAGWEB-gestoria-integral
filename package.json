@@ -1,7 +1,7 @@
 {
   "name": "pagweb-gestoria-integral",
   "version": "1.0.0",
-  "description": "Pagina Web de Gestoria Integral",
+  "description": "Pagina Web de Gestoria Integral funca?",
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js"
