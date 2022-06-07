@@ -3,7 +3,7 @@
   --primary: #8C3B1D;
   --primaryHalfOpacity:rgba(69, 46, 38, 0.9);
   --secondary: #b4ab80;
-  --secondaryHalfOpacity: #b4ab8071;
+  --secondaryHalfOpacity: #b4ab808e;
 }
 
 /* ///////////////////////// */
@@ -30,8 +30,8 @@ nav{
 /* ///////////////////////// */
 
 #servicios{
-  /* background-image:linear-gradient(var(--primaryHalfOpacity), var(--primaryHalfOpacity)), url('/images/negocio1.jpg'); */
-  background-size: cover;
+  /* background-image:linear-gradient(var(--primaryHalfOpacity), var(--primaryHalfOpacity)), url('/images/negocio1.jpg');
+  background-size: cover; */
   height: 100vh;
 }
 
@@ -39,14 +39,21 @@ nav{
   height: 10em;
   background-color: var(--secondaryHalfOpacity);
   box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+  transition: 0.3s;
+}
+
+.container-servicios:hover{
+  background-color: var(--secondary);
+  
 }
 
 .container-icon i{
   font-size: 4em;
+  
 }
 
 .container-text{
-  border-left: 2px solid var(--primary);
+  border-left: 3px solid var(--primary);
 }
 
 
