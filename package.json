@@ -2,9 +2,9 @@
   "name": "pagweb-gestoria-integral",
   "version": "1.0.0",
   "description": "Pagina Web de Gestoria Integral",
-  "main": "src/index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "build": "npm run build",
+    "start": "node .",
     "dev": "nodemon src/index.js"
   },
   "repository": {
