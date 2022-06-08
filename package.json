@@ -4,7 +4,7 @@
   "description": "Pagina Web de Gestoria Integral",
   "main": "index.js",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "scripts": {
     "start": "node index.js",
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/mroldsma/PAGWEB-gestoria-integral#readme",
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "ejs": "^3.1.7",
+    "ejs": "^3.1.8",
     "express": "^4.18.1"
   },
   "devDependencies": {
