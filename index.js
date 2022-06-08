@@ -7,8 +7,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // MIDDLEWARES
-app.use(express.static(path.join(__dirname, "public")));
-app.set("views", path.join(__dirname, "views"));
+app.use(express.static(path.join(__dirname, "src", "public")));
+app.set("views", path.join(__dirname, "src", "views"));
 app.set("view engine", "ejs");
 
 // ROUTES
