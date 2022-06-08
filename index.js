@@ -13,7 +13,7 @@ app.set("view engine", "ejs");
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.render("index");
+  return res.render("index");
 });
 
 // SERVER LISTENING
