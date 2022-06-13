@@ -6,6 +6,7 @@
   --secondaryHalfOpacity: #b4ab808e;
   --lighter: #F4F7FA;
   --light: #f1f3f3;
+  /* color interesante #211E31 */
 }
 
 /* ///////////////////////// */
@@ -67,6 +68,22 @@ nav{
   transition: 0.3s;
 }
 
+.container-servicios-inmuebles:hover{
+  background-color: #e9e8df;
+  cursor: pointer;
+}
+
+
+/* ///////////////////////// */
+/* //////  CTA  */
+/* ///////////////////////// */
+
+#cta{
+  background-image:linear-gradient(to bottom,rgba(69, 46, 38, 0.596), var(--primaryHalfOpacity)), url('/images/cta2.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+}
 
 
 
@@ -82,6 +99,30 @@ nav{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////// TODO  VER SI ESTO SIRVE !!!! */ 
 
 
 /* ///////////////////////// */
@@ -110,16 +151,6 @@ nav{
 
 
 
-
-
-
-
-
-
-
-
-
-/* ////// TODO  VER SI ESTO SIRVE !!!! */ 
 .img-servicios-automotor{
   position: relative;
   width: auto;
