@@ -4,6 +4,8 @@
   --primaryHalfOpacity:rgba(69, 46, 38, 0.9);
   --secondary: #b4ab80;
   --secondaryHalfOpacity: #b4ab808e;
+  --lighter: #F4F7FA;
+  --light: #f1f3f3;
 }
 
 /* ///////////////////////// */
@@ -22,16 +24,13 @@ nav{
   background-image:linear-gradient(var(--primaryHalfOpacity), var(--primaryHalfOpacity)), url('/images/hero1.jpg');
   background-size: cover;
   height: 100vh;
-  margin-top: -3.5em;
 }
 
 /* ///////////////////////// */
-/* ////// servicios */
+/* ////// servicios vehiculos */
 /* ///////////////////////// */
 
 #servicios{
-  /* background-image:linear-gradient(var(--primaryHalfOpacity), var(--primaryHalfOpacity)), url('/images/negocio1.jpg');
-  background-size: cover; */
   height: 100vh;
 }
 
@@ -44,94 +43,45 @@ nav{
 
 .container-servicios:hover{
   background-color: var(--secondary);
-  
+  cursor: pointer;
 }
 
 .container-icon i{
   font-size: 4em;
-  
 }
 
-.container-text{
-  border-left: 3px solid var(--primary);
+.container-icon{
+  border-right: 3px solid var(--primary);
+  height: 60%;
 }
 
+/* ///////////////////////// */
+/* ////// servicios inmuebles */
+/* ///////////////////////// */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.box{
-  position: relative;
-  width: 90%;
-  height: 300px;
-  padding: 40px;
+.container-servicios-inmuebles{
+  height: 10em;
+  background-color: var(--light);
   box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
-}
-
-.box::before{
-  content: "";
-  position: absolute; 
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: var(--secondary);
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.5s;
-}
-
-.box:hover:before{
-  transform: scaleY(1);
-  transform-origin: bottom;
-  transition: transform 0.5s;
+  transition: 0.3s;
 }
 
 
-.box .icon i{
-  position: absolute;
-  left: 40px;
-  top: 40px;
-  opacity: 0.5;
-  font-size: 5em;
-  transition: 0.5s;
-}
 
-.box:hover .icon i{
-  opacity: 1;
-  color: white;
-  transform: translateY(-40px);
-}
 
-.box h3, .box p{
-  position: relative;
-  top: 60px;
-  color: black;
-  transition: 0.5s;
-}
 
-.box:hover h3, .box:hover p{
-  color: white;
 
-}
+
+
+
+
+
+
+
+
+
+
 
 
 /* ///////////////////////// */
