@@ -9,12 +9,37 @@
   /* color interesante #211E31 */
 }
 
+
+
 /* ///////////////////////// */
 /* ////// navbar */
 /* ///////////////////////// */
 
 nav{
   z-index: 10;
+  transition: all 250ms ease;
+}
+
+.nav-top{
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.nav-scrolled{
+  background-color: var(--primary);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+#containerNavbar{
+  transition: all 250ms ease;
+}
+
+.containerNavbar-top{
+  padding: .5rem 1rem !important;
+}
+
+.containerNavbar-scrolled{
+  padding: 1.5rem 1rem !important;
 }
 
 /* ///////////////////////// */
@@ -24,7 +49,15 @@ nav{
 #hero{
   background-image:linear-gradient(var(--primaryHalfOpacity), var(--primaryHalfOpacity)), url('/images/hero1.jpg');
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+#hero .container{
+  height: 100%;
+}
+
+.custom-row-hero-1 .col{
+  height: 20rem;
 }
 
 /* ///////////////////////// */
@@ -128,6 +161,7 @@ nav{
 /* ///////////////////////// */
 /* ////// sobre mi */
 /* ///////////////////////// */
+/*  
 
 .img-sobre-mi{
   position: relative;
@@ -172,3 +206,5 @@ nav{
   border-top: 10px #8C3B1D solid;
   border-left: 10px #8C3B1D solid;
 }
+
+*/
